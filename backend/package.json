@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev src/index.ts"
+    "dev": "ts-node-dev src/index.ts",
+    "generate-client": "openapi-generator-cli generate -i http://localhost:3000/swagger.json -g typescript-axios -o ../frontend/src/generated-client"
   },
   "keywords": [],
   "author": "",
